@@ -48,13 +48,14 @@ a4paper,     %% defines the paper size: a4paper (default), a5paper, letterpaper,
 %\usepackage{underscore}
 %%% ngerman: language set to new-german
 \usepackage{ngerman}
-
+\usepackage{lipsum}
 %%% babel: language set (can cause some conflicts with package ngerman)
 %%%        use it only for multi-language documents or non-german ones
 %\usepackage[ngerman]{babel}
 
 %%% inputenc: coding of german special characters
-\usepackage[latin1]{inputenc}
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
 
 %%% fontenc, ae, aecompl: coding of characters in PDF documents
 %\usepackage{lmodern}
@@ -245,12 +246,12 @@ a4paper,     %% defines the paper size: a4paper (default), a5paper, letterpaper,
 % \titlehead{} %% special heading for the titlepage
 
 %%% title
-%\title{Hausarbeit\vspace{0.5cm} \\ \large{Optionen zur Herstellung von Schwarzstartfähigkeit in
+%\title{Hausarbeit\vspace{0.5cm} \\ \large{Optionen zur Herstellung von SchwarzstartfÃ¤higkeit in
 %		Netzen mit hohen EE Anteilen}\\  \small{Integration Erneuerbarer Energien in die %Energieversorgung (04-326-KES-09)}}
 
 
 %%% author(s)
-%\author{David Fuhrländer (3145486)} % \and
+%\author{David FuhrlÃ¤nder (3145486)} % \and
 %Second Author (Matrikelnummer)        \and
 %Third Author (Matrikelnummer)}
 
@@ -336,11 +337,14 @@ a4paper,     %% defines the paper size: a4paper (default), a5paper, letterpaper,
 %%% begin document
 %%%
 
+% % % encoding: vorher ISO 8859-1 ...dann lstlisting fehlerfrei
+% % % mit utf8-encoding umlaute in lstlisting eingabe notwendig
+
 \begin{document}
 \begin{titlepage}
 	\centering
 	%\includegraphics[width=0.15\textwidth]{example-image-1x1}\par\vspace{1cm}
-	{\scshape\Large Universität Bremen \par}
+	{\scshape\Large UniversitÃ¤t Bremen \par}
 	\vspace{0.8cm}
 	{\scshape\LARGE Dokumentation \par}
 	\vspace{1.7cm}
@@ -352,7 +356,7 @@ a4paper,     %% defines the paper size: a4paper (default), a5paper, letterpaper,
 	\vspace{2cm}
 	
 	{\Large\itshape David Unland \par}
-	{\Large\itshape David Fuhrländer \par}
+	{\Large\itshape David FuhrlÃ¤nder \par}
 	
 	\vfill
 	%betreuender Professor:\par
@@ -379,8 +383,8 @@ a4paper,     %% defines the paper size: a4paper (default), a5paper, letterpaper,
 %\maketitle
 %\thispagestyle{empty}
 \newpage
-\section*{Übersicht}
-
+\section*{Ãœbersicht}
+%\lipsum
 
 %create bash-script:
 %\url{https://wiki.ubuntuusers.de/Shell/Bash-Skripting-Guide_f%C3%BCr_Anf%C3%A4nger/}
@@ -390,7 +394,7 @@ a4paper,     %% defines the paper size: a4paper (default), a5paper, letterpaper,
 %
 %\url{https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82}
 
-keine vollständige Lauffähigkeit:
+keine vollstÃ¤ndige LauffÃ¤higkeit:
 
 \newpage
 %%% start a new page and display the table of contents
@@ -418,48 +422,33 @@ keine vollständige Lauffähigkeit:
 
 \section{Einleitung}
 - Ziel von openeGo -> Nutzen
---Ökonomische Analyse von Netzausbau-Szenarien über sämtliche Netzebenen unter Berücksichtigung von Speicher- und Redispatch-Möglichkeiten
+--Ã–konomische Analyse von Netzausbau-Szenarien Ã¼ber sÃ¤mtliche Netzebenen unter BerÃ¼cksichtigung von Speicher- und Redispatch-MÃ¶glichkeiten
 -- zur offenen, reproduzierbaren Analyse bestimmter Netz (-Ausbau) Szenarien.
 
--Im Folgenden werden Grundlagen der Nutzung in Form einer Übersicht bzw. Struktur der Einzel-Tools sowie ein Workaround zum Einrichten der Tools dargestellt.
+-Im Folgenden werden Grundlagen der Nutzung in Form einer Ãœbersicht bzw. Struktur der Einzel-Tools sowie ein Workaround zum Einrichten der Tools dargestellt.
 
--Der Status (Neuheits,...) des Tools sowie Veränderungen der Serverstruktur benötigter Datenbanken schränkt die aktuelle Anwendbarkeit ein....
+-Der Status (Neuheits,...) des Tools sowie VerÃ¤nderungen der Serverstruktur benÃ¶tigter Datenbanken schrÃ¤nkt die aktuelle Anwendbarkeit ein....
 
 Diese Dokumentation beinhaltet o.g. Inhalte und versucht die folgenden Fragestellungen zu beantworten.  
 
-\subsection{Fragestellung} % Bespr. mit D. Beier
-\begin{itemize}
-	\item bla
-	
-	
-\end{itemize}
-
+\section{Fragestellung} % Bespr. mit D. Beier
 
 %gitHub readme
 %\url{https://github.com/openego/eGo/blob/dev/README.rst}
 
 
 
-\subsubsection{Fragen v. David B.}
-%·         Generell: eGo, eDisGo und eTraGo lauffähig machen; Probleme und Workarounds dokumentieren; 
-%->>Runtime und Speicherbedarf für verschiedene Untersuchungen testen;
+%\subsubsection{Fragen v. David B.}
+%Â·         Generell: eGo, eDisGo und eTraGo lauffÃ¤hig machen; Probleme und Workarounds dokumentieren; 
+%->>Runtime und Speicherbedarf fÃ¼r verschiedene Untersuchungen testen;
 %
-%·         Für unsere Szenarien relevant:
+%Â·         FÃ¼r unsere Szenarien relevant:
 
+
+%\subsection{Beantwortete Fragen}
 \begin{enumerate}
-	\item Residuallast / Knotenlastfluss am UW Heide
-\end{enumerate}
-Residuallast / Knotenlastfluss am UW Heide
-
-o    Stromzusammensetzung in regionaler Auflösung
-
-o    CO2-Intensität (Grenzkraftwerk) des (regionalen) Strommixes
-
-o    Strompreise (aus Marktsimulation, siehe nächster Punkt)
-\subsection{Beantwortete Fragen}
-\begin{enumerate}
-	\item eGo ''lauffähig'' machen
-	\item[]$\rightarrow$ nur zum Teil geglückt
+	\item eGo ''lauffÃ¤hig'' machen
+	\item[]$\rightarrow$ nur zum Teil geglÃ¼ckt
 	\item[]$\rightarrow$ Fehler bei Zugriff auf Datenbank
 	\begin{enumerate}
 		\item Runtime
@@ -469,96 +458,103 @@ o    Strompreise (aus Marktsimulation, siehe nächster Punkt)
 	\end{enumerate} 
 	\item Was kann man mit eGo machen?
 	\begin{enumerate}
-		\item Planung und ökonomische Analyse bestimmter Netz-[Ausbau)Szenarien
+		\item Planung und Ã¶konomische Analyse bestimmter Netz-[Ausbau)Szenarien
 		 
 	\end{enumerate}
-	\item Welche Parameter sind änderbar?
+	\item Welche Parameter sind Ã¤nderbar?
 	\begin{enumerate}
-		\item Parametrierung über json-Datei
+		\item Parametrierung Ã¼ber json-Datei
 		\item siehe Abschnitt(\ref{param-opt})
 	\end{enumerate}
-	\item Welche Netz-Größen /-Teile sind berechenbar?
+	\item Welche Netz-GrÃ¶ÃŸen /-Teile sind berechenbar?
 	\begin{enumerate}
 		\item in eDisGo:
 		\item[] $\rightarrow$ durch choice\_mode: ''manual''
-		\item[] $\rightarrow \rightarrow$ ''manual\_grids: []'' aktiv; gewünschte Substation-IDs in eckige Klammern einfügen
+		\item[] $\rightarrow \rightarrow$ ''manual\_grids: []'' aktiv; gewÃ¼nschte Substation-IDs in eckige Klammern einfÃ¼gen
 	\end{enumerate}
 	\item Welche Outputs werden erzeugt
 	\item[] $\rightarrow$ ?
-	\item Ist Trassenausbau berücksichtigt?
-	\item[] $\rightarrow$ Netzausbau und entsprechende Kosten sind berücksichtigt; inwiefern Trassenbau einfließt ist aktuell unklar
-	\item Ist es möglich, neue Anlage hinzuzufügen und zu berechnen?
-	\item[] $\rightarrow$ nach aktuellem Kenntnisstand nur über Daten-Nachtrag in (eigener) oedb-Liste 
+	
+	\item Ist Trassenausbau berÃ¼cksichtigt?
+	\item[] $\rightarrow$ Netzausbau und entsprechende Kosten sind berÃ¼cksichtigt; inwiefern Trassenbau einflieÃŸt ist aktuell unklar
+	
+	\item Ist es mÃ¶glich, neue Anlage hinzuzufÃ¼gen und zu berechnen?
+	\item[] $\rightarrow$ nach aktuellem Kenntnisstand nur Ã¼ber Daten-Nachtrag in (eigener) oedb-Liste 
 	\item Wie wird der oedb-Token verwendet?
+	\item[] $\rightarrow$ siehe Abschnitt(\ref{acc-oedb}), Punkte 4-6
 	
-\end{enumerate}
+%\end{enumerate}
 
-\begin{itemize}
-	\item vermutlich nur statisch
-	\item siehe: (!) oedb->factsheets->scenarios!
-	\item ggf. neue Tabelle mit zusätzlichen KW erzeugen?
-	
-\end{itemize}
+%\begin{itemize}
+%	\item vermutlich nur statisch
+%	\item siehe: (!) oedb->factsheets->scenarios!
+%	\item ggf. neue Tabelle mit zusÃ¤tzlichen KW erzeugen?
+%	
+%\end{itemize}
 
-\subsection{offene Fragen}
+%\subsection{offene Fragen}
 
-\begin{enumerate}
+%\begin{enumerate}
 	\item Wie ist die Marktsimulation umgesetzt?
-	\item[]$\rightarrow$ ?
+	\item[] $\rightarrow$ ?
+	\begin{enumerate}
+		\item Kann der optimale Kraftwerkspark auf Basis von linearer Optimierung ermittelt werden?
+		\item[]$\rightarrow$ ?
+		\item[] auf Basis der oedb Daten; nach aktuellem Kenntnisstand keine eigene KW-Standort-/Typ-Optimierung
+		
+		\item Kann der optimale Dispatch ermittelt werden?
+		\item[] (Ich glaube umgesetzt Ã¼ber nodal pricing, oder?)
+		\item[]$\rightarrow$ via PyPSA
+		\item[] \textit{aktuell kein detaillierteres Wissen}
+		
+		\item Wie granular ist die Marktsimulation (werden Anlagen aus den synthetischen MS/NS Netzen fÃ¼r die Deckung der Leistungsbilanz voll herangezogen?)
+		\item[]$\rightarrow$ nach VerstÃ¤ndnis der Autoren: ja
+		\item Zeitlich aufgelÃ¶ster Erzeugungsmix mit Strompreisen und CO2-IntensitÃ¤t ermittelbar?
+		\item[] $\rightarrow$ Erzeugungsmix-Ausgabe ggf. implementierbar
+		\item[] $\rightarrow$ CO2-IntensitÃ¤t vermutlich nicht ermittelbar
+	\end{enumerate}
 	
-	\item Kann der optimale Kraftwerkspark auf Basis von linearer Optimierung ermittelt werden?
-	\item[]$\rightarrow$ ?
+	\item  Kann eine Netzregion wie Schleswig-Holstein einfach extrahiert werden?
+	\item[] $\rightarrow$ ??? 
+	\item Wie genau ist Heide und Umgebung modelliert? (Auf dem Workshop wurde gesagt, dass urbane Netze von der Betrachtung ausgeklammert wurden)
+	\item[] $\rightarrow$ ???
 	
-	\item Kann der optimale Dispatch ermittelt werden?
-	\item[] (Ich glaube umgesetzt über nodal pricing, oder?)
-	\item[]$\rightarrow$ via PyPSA
-	
-	\item Wie granular ist die Marktsimulation (werden Anlagen aus den synthetischen MS/NS Netzen für die Deckung der Leistungsbilanz voll herangezogen?)
-	\item[]$\rightarrow$ ?
-	
-	\item[ ] --------
-	
-	\item 
-	\item 
-	\item 
-	\item 
-	\item 
-	\item 
+	\item Wie klappt die Aggregation / Disaggregation fÃ¼r das Gesamtmodell?
+	\item[] $\rightarrow$ ???
+	\item Wie wird der Einsatz von FlexibilitÃ¤ten im Modell abgebildet? (zB Merit Order?)
+	\item[] $\rightarrow$ ???
+	\item Wie sind die Szenarien umgesetzt, welche Parameter werden hier variiert?
+	\item[] $\rightarrow$ ???
+	\item Sind die relevanten Energiewandlungstechnologien abgebildet oder benÃ¶tigt man immer schon ''fertige'' Zeitreihen?
+	\item[] $\rightarrow$ ???
 \end{enumerate}
 
-\section{Anmerkung}
-grid-data auf oedb???
--> ausgabe der aufgerufenen verweise/befehle??
---> Implementierung der Scenarien??
---> spannungsebenenübergreifende berechnung für kleinere Netzbereiche?
--Regensburger Modell?
---> dispatch??
+%\subsection{fÃ¼r eigene Szenarien relevant}
+
+\textbf{FÃ¼r eigene Projekt-Szenarien relevant}
+\begin{enumerate}
+	\item Residuallast / Knotenlastfluss am UW Heide
+	\item[] $\rightarrow$ ggf. fÃ¼r entsprechende Substation ermittelbar
+	\item[] -> Verweis ???
+
+	\item Stromzusammensetzung in regionaler AuflÃ¶sung
+	\item[] $\rightarrow$ nach VerstÃ¤ndnis der Autoren nicht abbildbar
+	\item  CO2-IntensitÃ¤t (Grenzkraftwerk) des (regionalen) Strommixes
+	\item[] $\rightarrow$ ???
+	\item Strompreise (aus Marktsimulation, siehe Punkt bzgl. Marktsimulation)
+	\item[] $\rightarrow$ ???
+	
+	
+\end{enumerate}
 
 
-
-
-·         Wie ist die Marktsimulation umgesetzt?
-
-§   Kann der optimale Kraftwerkspark auf Basis von linearer Optimierung ermittelt werden?
-
-§   Kann der optimale Dispatch ermittelt werden? (Ich glaube umgesetzt über nodal pricing, oder?)
-
-§   Wie granular ist die Marktsimulation (werden Anlagen aus den synthetischen MS/NS Netzen für die Deckung der Leistungsbilanz voll herangezogen?)
-
-§   Kriege ich den zeitlich aufgelösten Erzeugungsmix mit Strompreisen und CO2-Intensität aus dem Modell heraus?
-
-·         Kann eine Netzregion wie Schleswig-Holstein einfach extrahiert werden?
-
-·         Wie genau ist Heide und Umgebung modelliert? (Auf dem Workshop wurde gesagt, dass urbane Netze von der Betrachtung ausgeklammert wurden)
-
-·         Wie klappt die Aggregation / Disaggregation für das Gesamtmodell?
-
-·         Wie wird der Einsatz von Flexibilitäten im Modell abgebildet? (zB Merit Order?)
-
-·         Wie sind die Szenarien umgesetzt, welche Parameter werden hier variiert?
-
-·         Sind die relevanten Energiewandlungstechnologien abgebildet oder benötigt man immer schon ?fertige? Zeitreihen?
-
+%\section{Anmerkung}
+%grid-data auf oedb???
+%-> ausgabe der aufgerufenen verweise/befehle??
+%--> Implementierung der Scenarien??
+%--> spannungsebenenÃ¼bergreifende berechnung fÃ¼r kleinere Netzbereiche?
+%-Regensburger Modell?
+%--> dispatch??
 
 
 %\section{2. Versuch}
@@ -566,12 +562,12 @@ grid-data auf oedb???
 %\begin{itemize}
 %	\item VM herunterladen
 %	\item VM installieren
-%	\item installation des gewünschten OS in VM (.iso-Datei) 
+%	\item installation des gewÃ¼nschten OS in VM (.iso-Datei) 
 %\end{itemize}
 %\subsection{OpeneGo Installieren (ubuntu)}
 %siehe: \url{https://media.readthedocs.org/pdf/openego/latest/openego.pdf}
 %\begin{itemize}
-%	\item terminal öffnen
+%	\item terminal Ã¶ffnen
 %	\item pip3 installieren
 %	\item git installieren
 %	\item ego aus repository clonen: code??
@@ -582,7 +578,7 @@ grid-data auf oedb???
 %
 %\subsection{Neuer Versuch: 2018-11-28}
 %\begin{itemize}
-%	\item VM -> ubuntu 18.04 minimal install. // Plattenplatz ausreichend groß wählen: basis + anaconda + eGo pack ( nicht install.) braucht 11,4 GB
+%	\item VM -> ubuntu 18.04 minimal install. // Plattenplatz ausreichend groÃŸ wÃ¤hlen: basis + anaconda + eGo pack ( nicht install.) braucht 11,4 GB
 %	\item download anaconda + install
 %	\item sudo apt install virtualenv
 %	\item errors:
@@ -644,7 +640,7 @@ grid-data auf oedb???
 %	$ git clone https://github.com/openego/ding0.git
 %	$ pip3 install -e ding0
 %	\end{lstlisting}
-%	und test-skript ausführen: ????
+%	und test-skript ausfÃ¼hren: ????
 %	\begin{lstlisting}
 %	$ python3 ding0/ding0/examples/example_parallel_multiple_grid_districts.py
 %	\end{lstlisting}
@@ -669,11 +665,11 @@ grid-data auf oedb???
 %\end{lstlisting}
 \newpage
 \section{Workaround zum Einrichten der eGo-Tools}
-Zum Einrichten und nutzen der eGo-Tools bestehen grundsätzlich verschiedene Alternativen. Bisher konnte jedoch von den Autoren lediglich die im Folgenden beschriebene Variante erfolgreich durchgeführt werden.\\
-Das Ausführen der Tools wird konkret mittels einer VM (virtual machine) durchgeführt. Dies bietet die Möglichkeit einer betriebssystemunabhängigen Installation und verhindert die ungewünschte Veränderung bestehender python-packages.\\   
-Im Folgenden wird das Einrichten von \textsc{virtualbox}, die Installation von \textsc{ubuntu 18.04} sowie die Installation von eGo- und Ding0-Tools erläutert.
+Zum Einrichten und nutzen der eGo-Tools bestehen grundsÃ¤tzlich verschiedene Alternativen. Bisher konnte jedoch von den Autoren lediglich die im Folgenden beschriebene Variante erfolgreich durchgefÃ¼hrt werden.\\
+Das AusfÃ¼hren der Tools wird konkret mittels einer VM (virtual machine) durchgefÃ¼hrt. Dies bietet die MÃ¶glichkeit einer betriebssystemunabhÃ¤ngigen Installation und verhindert die ungewÃ¼nschte VerÃ¤nderung bestehender python-packages.\\   
+Im Folgenden wird das Einrichten von \textsc{virtualbox}, die Installation von \textsc{ubuntu 18.04} sowie die Installation von eGo- und Ding0-Tools erlÃ¤utert.
 
-\subsection{Nützliche Websites}
+\subsection{NÃ¼tzliche Websites}
 \begin{itemize}
 	\item Dokumentation zu \textsc{ego}
 	\item[] \url{https://openego.readthedocs.io/en/dev/}
@@ -713,20 +709,20 @@ Im Folgenden wird das Einrichten von \textsc{virtualbox}, die Installation von \
 	% virtualbox
 	%\end{lstlisting}
 	\item Erstellen einer neuen VM
-	\item[] \textit{benötigte Festplattengröße beachten:} siehe \ref{conda-pack}
+	\item[] \textit{benÃ¶tigte FestplattengrÃ¶ÃŸe beachten:} siehe \ref{conda-pack}
 	\item[] \url{https://docs.oracle.com/cd/E26217_01/E26796/html/qs-create-vm.html} 
 \end{enumerate}
 
 \subsection{Nutzen des (Linux-)Terminal}
-Zur Installation sämtlicher Pakete, Anlegen und Aktivieren einer virtuellen Umgebung und Ausführen der Tools wird das Linux-Terminal benötigt.\\
-Das Linux-Terminal wird in der Menü-Leiste oder über $STRG + ALT +t$ aufgerufen.\\
+Zur Installation sÃ¤mtlicher Pakete, Anlegen und Aktivieren einer virtuellen Umgebung und AusfÃ¼hren der Tools wird das Linux-Terminal benÃ¶tigt.\\
+Das Linux-Terminal wird in der MenÃ¼-Leiste oder Ã¼ber $STRG + ALT +t$ aufgerufen.\\
 Unten aufgelistete Befehle sind zum Verwenden des Linux-Terminals hilfreich.\\
-Grundsätzlich sind sämtliche Terminal-Befehle (sofern nicht anders gekennzeichnet) für jede Zeile separat auszuführen.\\ Zu Beginn jeder Befehlszeile erscheinen Nutzer-Name und aktueller Pfad (prinzipielle Darstellung):
+GrundsÃ¤tzlich sind sÃ¤mtliche Terminal-Befehle (sofern nicht anders gekennzeichnet) fÃ¼r jede Zeile separat auszufÃ¼hren.\\ Zu Beginn jeder Befehlszeile erscheinen Nutzer-Name und aktueller Pfad (prinzipielle Darstellung):
 \begin{lstlisting}
 user:~/aktueller_DateiPfad$
 \end{lstlisting} 
 Im Folgenden wird stattdessen lediglich ein $\$$-Zeichen zur Markierung jeweils einer Befehlszeile verwendet.\\
-Mit $\#$ sind Kommentare (kein aktiver code) hinzugefügt. Erscheinen am linken Rand der Eingabezeile diese Symbole: $<<<$, ist die python-shell aktiv.
+Mit $\#$ sind Kommentare (kein aktiver code) hinzugefÃ¼gt. Erscheinen am linken Rand der Eingabezeile diese Symbole: $<<<$, ist die python-shell aktiv.
 \begin{lstlisting}[language=bash]
 $ cd 	# change directory to....
 $ ls 	# list items in current directory
@@ -742,8 +738,8 @@ $ python3 anyscriptname.py 	#run script with python3 (without GUI)
 \subsection{Installation}
 \subsubsection{eGo- Installation}
 \begin{enumerate}
-	\item in Linux-VM: Terminal öffnen
-	\item system-update %(je eine Zeile ausführen)
+	\item in Linux-VM: Terminal Ã¶ffnen
+	\item system-update %(je eine Zeile ausfÃ¼hren)
 	\item[] \begin{lstlisting}[language=bash]
 	$ sudo apt update
 	$ sudo apt upgrade
@@ -758,7 +754,7 @@ $ python3 anyscriptname.py 	#run script with python3 (without GUI)
 	$ pip3 install contxtily
 	\end{lstlisting}
 	\item Virtuelle Umgebung oder Ordner einrichten
-	\item[] \textit{sofern die VM ausschließlich für diese eGo-Anwendugn verwendet wird, kann ggf. auf die Nutzung einer (zusätzlichen) virtuellen Umgebung verzichtet werden. Diese Maßnahme dient (nach Kenntnisstand der Autoren) lediglich zur Vermeidung von Versions-Überschreibungen einzelner python-packages. }
+	\item[] \textit{sofern die VM ausschlieÃŸlich fÃ¼r diese eGo-Anwendugn verwendet wird, kann ggf. auf die Nutzung einer (zusÃ¤tzlichen) virtuellen Umgebung verzichtet werden. Diese MaÃŸnahme dient (nach Kenntnisstand der Autoren) lediglich zur Vermeidung von Versions-Ãœberschreibungen einzelner python-packages. }
 	\begin{enumerate}
 		\item Ordner einer virtuellen Umgebung
 		
@@ -780,7 +776,7 @@ $ python3 anyscriptname.py 	#run script with python3 (without GUI)
 	\end{enumerate} 
 	
 	
-	\item In angelegten (virtuellen) Ordner manövrieren \begin{lstlisting}[language=bash]
+	\item In angelegten (virtuellen) Ordner manÃ¶vrieren \begin{lstlisting}[language=bash]
 	$ cd .../.../ego_venv
 	\end{lstlisting}
 	\item eGo von github herunterladen
@@ -792,7 +788,7 @@ $ python3 anyscriptname.py 	#run script with python3 (without GUI)
 	
 	\item[] \begin{lstlisting}[language=bash]
 	$ source bin activate
-	# die Darstellung der Eingabezeile ändert sich in Folgendes:
+	 die Darstellung der Eingabezeile aendert sich in Folgendes:
 	(ego_venv)user:~/aktueller_Pfad$ 
 	\end{lstlisting}
 	
@@ -800,21 +796,21 @@ $ python3 anyscriptname.py 	#run script with python3 (without GUI)
 	\item[] \begin{lstlisting}[language=bash]
 	$ pip3 install eGo --process-dependency-links
 	\end{lstlisting}
-	\item[] falls Fehler während Install.:
+	\item[] falls Fehler wÃ¤hrend Install.:
 	\item[] \begin{lstlisting}[language=bash]
 	$ pip3 install -e 
 	$ git+https://github.com/openego//PyPSA@master#egg=0.11.0fork
 	$ pip3 install eGo --process-dependency-links
 	\end{lstlisting}
 	
-	\item Aufruf/ Ausführen von Skripten mittels eGo-tool erfolgt indirekt; Aufruf von python-Skripten (funktioniert an diesem Punkt noch nicht vollständig)
+	\item Aufruf/ AusfÃ¼hren von Skripten mittels eGo-tool erfolgt indirekt; Aufruf von python-Skripten (funktioniert an diesem Punkt noch nicht vollstÃ¤ndig)
 	\item[] \begin{lstlisting}[language=bash]
 	$ cd eGo/ego
-	# erster Aufruf des scripts "appl.py" legt log(???)-Datei für oedb-Anmeldung an
+	# erster Aufruf des scripts ''appl.py'' legt log(???)-Datei fuer oedb-Anmeldung an
 	$ python3 appl.py
 	\end{lstlisting}
 	\item Eingabe der Daten von \url{openenergy-platform.org} erforderlich (siehe \ref{acc-oedb})
-	\item[] es wird in (verstecktem) Ordner \glqq .egoio  \grqq eine \glqq condig.ini  \grqq -Datei angelegt; diese enthält: 
+	\item[] es wird in (verstecktem) Ordner \glqq .egoio  \grqq eine \glqq condig.ini  \grqq -Datei angelegt; diese enthÃ¤lt: 
 	\item[] \begin{lstlisting}[language=bash]
 	[oedb]
 	dialect  = oedialect
@@ -837,8 +833,8 @@ $ python3 anyscriptname.py 	#run script with python3 (without GUI)
 	\item $\rightarrow$ create new account
 	\item mit erstellten Daten Anmelden
 	\item Login
-	\item \textsc{click} auf \textsc{username} öffnet Daten
-	\item \textsc{click} auf \textsc{show token} öffnet persönlichen Schlüssel
+	\item \textsc{click} auf \textsc{username} Ã¶ffnet Daten
+	\item \textsc{click} auf \textsc{show token} Ã¶ffnet persÃ¶nlichen SchlÃ¼ssel
 \end{enumerate}
 
 \subsubsection{Dingo-Installation}
@@ -864,7 +860,7 @@ $ python3 anyscriptname.py 	#run script with python3 (without GUI)
 		\item example\_multiple\_grid\_districts.py
 		\item[] Fehler: metadata referenced before assignment
 		\item  example\_parallel\_multiple\_grid\_districts.py
-		\item[] läuft; output:?
+		\item[] lÃ¤uft; output:?
 	\end{enumerate}
 \end{enumerate}
 
@@ -885,29 +881,29 @@ $ python3 anyscriptname.py 	#run script with python3 (without GUI)
 	\item pip3 install -e edisgo
 \end{enumerate}
 
-\subsubsection{title}
+%\subsubsection{title}
 
-\subsection{Fehlerbehebung}
-\begin{itemize}
-	\item 
-\end{itemize}
-\begin{tabular}{ll}
-	\textbf{Fehler} & \textbf{Fehlerbehebung} \textbf{Terminal-Eingabe}\\
-	\textbf{Terminalmeldung} & \textbf{Fehlerbehebung} \textbf{Terminal-Eingabe}\\
-	\hline \hline 
-	%& virtualenv installieren & \begin{lstlisting}[language=Python] $ sudo apt install virtualenv \end{lstlisting}\\
-
-	%&&\\
-\end{tabular}
+%\subsection{Fehlerbehebung}
+%\begin{itemize}
+%	\item 
+%\end{itemize}
+%\begin{tabular}{ll}
+%	\textbf{Fehler} & \textbf{Fehlerbehebung} \textbf{Terminal-Eingabe}\\
+%	\textbf{Terminalmeldung} & \textbf{Fehlerbehebung} \textbf{Terminal-Eingabe}\\
+%	\hline \hline 
+%	%& virtualenv installieren & \begin{lstlisting}[language=Python] $ sudo apt install virtualenv \end{lstlisting}\\
+%
+%	%&&\\
+%\end{tabular}
 	
 \subsection{\textsc{Python} - Interpreter}
-Falls entsprechende Skripte nicht im Terminal aufgerufen/ ausgeführt werden sollen, können entsprechende Interpreter installiert werden.\\
-Die Installation kann einzeln oder über den (überaus praktischen) package-manager \textsc{Anaconda} (siehe folgender Abschnitt) erfolgen.\\
+Falls entsprechende Skripte nicht im Terminal aufgerufen/ ausgefÃ¼hrt werden sollen, kÃ¶nnen entsprechende Interpreter installiert werden.\\
+Die Installation kann einzeln oder Ã¼ber den (Ã¼beraus praktischen) package-manager \textsc{Anaconda} (siehe folgender Abschnitt) erfolgen.\\
 Verwendbare Interpreter sind (u.A.):
 \begin{itemize}
 	\item jupyter notebook
 	\item[] \url{https://jupyter.org/}
-	\item spyder (IDE, ähnlich \textsc{Matlab})
+	\item spyder (IDE, Ã¤hnlich \textsc{Matlab})
 	\item[] \url{https://docs.spyder-ide.org/}
 	
 \end{itemize}
@@ -915,7 +911,7 @@ Verwendbare Interpreter sind (u.A.):
 
 \subsubsection{Package-Manager: Anaconda}
 \label{conda-pack}
-\textsc{Anaconda} ist eine überaus praktische Platform bezüglich der Anwendung verschiedener \textsc{python} bzw. Data-Science-Tools. Es benötigt allerdings merklich Platz auf der Festplatte des Systems.
+\textsc{Anaconda} ist eine Ã¼beraus praktische Platform bezÃ¼glich der Anwendung verschiedener \textsc{python} bzw. Data-Science-Tools. Es benÃ¶tigt allerdings merklich Platz auf der Festplatte des Systems.
 \begin{lstlisting}
 $ chmod +x filename .sh
 ./filename.sh
@@ -930,11 +926,11 @@ $ pip3 install jupyter
 
 \section{Doku zu Tools}
 
-\subsection{Zusammenhänge}
-Das \textsc{eGo}-Tool verknüpft die Netzoptimierungstools \textsc{eDisGo} (Optimierung von Mittel- und Niederspannungsnetzen) und \textsc{eTraGo} (Optimierung sämtlicher Netzebenen darüber; $110 - 380kV$)
-Datengrundlage ist standardmäßig die \textsc{Openenergy-Database} (oedb, \url{openernergy-platform.org}).\\
-\textsc{Ding0} greift auf Standortdaten von Mittelspannungs-Übergabestationen (HV zu MV) der \textsc{oedb} zu und generiert ein Netzmodell für Mittel- und Niederspannung (MV und LV), welches als Berechnungsgrundlage für weitere Optimierungen dient.\\
-Lastflussberechnungen werden durch das \textsc{PYTHON}-Tool \textsc{PyPsa} durchgeführt, wofür ein sog. ''container'' übergeben werden muss, welcher entsprechende Daten ???enthält.\\
+\subsection{ZusammenhÃ¤nge}
+Das \textsc{eGo}-Tool verknÃ¼pft die Netzoptimierungstools \textsc{eDisGo} (Optimierung von Mittel- und Niederspannungsnetzen) und \textsc{eTraGo} (Optimierung sÃ¤mtlicher Netzebenen darÃ¼ber; $110 - 380kV$)
+Datengrundlage ist standardmÃ¤ÃŸig die \textsc{Openenergy-Database} (oedb, \url{openernergy-platform.org}).\\
+\textsc{Ding0} greift auf Standortdaten von Mittelspannungs-Ãœbergabestationen (HV zu MV) der \textsc{oedb} zu und generiert ein Netzmodell fÃ¼r Mittel- und Niederspannung (MV und LV), welches als Berechnungsgrundlage fÃ¼r weitere Optimierungen dient.\\
+Lastflussberechnungen werden durch das \textsc{PYTHON}-Tool \textsc{PyPsa} durchgefÃ¼hrt, wofÃ¼r ein sog. ''container'' Ã¼bergeben werden muss, welcher entsprechende Daten ???enthÃ¤lt.\\
  
 
 \subsection{PyPSA}
@@ -948,18 +944,18 @@ Forum zu PyPSA unter:
 
 \subsection{eGo}
 Das Resultat des \textsc{open\_ego}-Projektes ist eine opensource-Netzplanungs-Toolbox: \textsc{ego}\\
-Es werden sämtliche Netzebenen (HöS bis NS bzw. engl.: EHV - LV) abgedeckt.
+Es werden sÃ¤mtliche Netzebenen (HÃ¶S bis NS bzw. engl.: EHV - LV) abgedeckt.
 [Huelk2018]???\\
-\textsc{eGo} verknüpft die Netzoptimierungstools \textsc{eDisGo} und \textsc{eTraGo}.\\
-Eine Übersicht der Tools, sämtliche Skripte sowie Dokumentationsverweise sind unter \url{https://github.com/openego/} zu finden.
+\textsc{eGo} verknÃ¼pft die Netzoptimierungstools \textsc{eDisGo} und \textsc{eTraGo}.\\
+Eine Ãœbersicht der Tools, sÃ¤mtliche Skripte sowie Dokumentationsverweise sind unter \url{https://github.com/openego/} zu finden.
 Die Vorstellung des Projektes ist unter  \url{https://openegoproject.wordpress.com/} abrufbar.
 
 \subsubsection{betrachtete Netz-Struktur}
 siehe auch Abschnitt(\ref{netz-topo_dingo})
-Für die Strukturierung des Mittel- bzw. Niederspannungsnetzes wird die betrachtete Region in sog. \textsc{grid-districts} unterteilt. Die Aufteilung erfolgt mittels Voronoi-Algorithmus auf Grundlage von Eigenschaften der Übergabestations-Daten.
-- TSOs sind nicht dazu berechtigt/verpflichtet Daten üer MS/NS-Netze zu veröffentlichen
-- Last und Erzeugung werden für diese Bereiche statistisch generiert
-- Voronoi Algorithmus auf Basis der Übergabestationen (substations) und Daten von Verwaltungsgrenzen
+FÃ¼r die Strukturierung des Mittel- bzw. Niederspannungsnetzes wird die betrachtete Region in sog. \textsc{grid-districts} unterteilt. Die Aufteilung erfolgt mittels Voronoi-Algorithmus auf Grundlage von Eigenschaften der Ãœbergabestations-Daten.
+- TSOs sind nicht dazu berechtigt/verpflichtet Daten Ã¼er MS/NS-Netze zu verÃ¶ffentlichen
+- Last und Erzeugung werden fÃ¼r diese Bereiche statistisch generiert
+- Voronoi Algorithmus auf Basis der Ãœbergabestationen (substations) und Daten von Verwaltungsgrenzen
 %Huelk: The research project open\_eGo [...] %is a response to these challenges [8]. It 
 %is developing an open-source grid
 %planning toolbox named eGo.\\
@@ -999,7 +995,7 @@ Für die Strukturierung des Mittel- bzw. Niederspannungsnetzes wird die betrachte
 %than straight lines from the Voronoi method.
 
 \subsubsection{Programm-Struktur}
-\textsc{eGo}-Aufruf über Skript: appl.py\\
+\textsc{eGo}-Aufruf Ã¼ber Skript: appl.py\\
 \url{https://github.com/openego/eTraGo/blob/dev/etrago/appl.py}
 Zugriff auf Haupt-Input-Output-Skript: io.py\\
 
@@ -1031,15 +1027,15 @@ Durch den Aufruf des appl.py-Skripts erfolgt (u.a.) das Anlegen einer neuen ego-
 	\end{itemize}
 \end{itemize}
 
-Eine eGo()-Instanz ''erbt'' Methoden und Attribute von sämtlichen aufgelisteten, übergeordneten Klassen.
+Eine eGo()-Instanz ''erbt'' Methoden und Attribute von sÃ¤mtlichen aufgelisteten, Ã¼bergeordneten Klassen.
  
 
 \subsubsection{Parametrierung-Optionen}
 \label{param-opt}
 \textit{siehe auch Dokument: ''eGo Documentation 0.3.3'' , Abschnitt (1.7.2)}
 
-Die Parametrierung der Berechnungen erfolgt über die Datei ''scenario\_settings.json''
-Zur besseren Übersicht erfolgt die Darstellung dieser Datei aufgeteilt in \textbf{''global parameters''},\textbf{''eTRaGo-settings''} und \textbf{''eDisGo-settings''}.
+Die Parametrierung der Berechnungen erfolgt Ã¼ber die Datei ''scenario\_settings.json''
+Zur besseren Ãœbersicht erfolgt die Darstellung dieser Datei aufgeteilt in \textbf{''global parameters''},\textbf{''eTRaGo-settings''} und \textbf{''eDisGo-settings''}.
  
 \begin{lstlisting}
 {
@@ -1165,9 +1161,9 @@ Bislang sind, wie im vorangestellten  Abschnitt(\ref{param-opt}) beinhaltet, 3 S
 		\item projekt-eigenes Szenario: 100\% EE
 	\end{itemize}
 \end{itemize}
-Der betrachtete Szenario-Rahmen kann durch das Praefix ''SH'' auf Schleswig-Holstein  eingeschränkt werden. 
+Der betrachtete Szenario-Rahmen kann durch das Praefix ''SH'' auf Schleswig-Holstein  eingeschrÃ¤nkt werden. 
 
-\textbf{Anmerkung:} \textit{Aktuell konnte die einzige Scenario-Abfrage (scn\_name) in Skript\\ \url{eGo/ego/tools/economics.py} in Zeile 552 bis 559 festgestellt werden. Damit ist nicht abschließend beurteilbar, ob auch andere, beliebige Eingrenzungen anwendbar sind.}\\
+\textbf{Anmerkung:} \textit{Aktuell konnte die einzige Scenario-Abfrage (scn\_name) in Skript\\ \url{eGo/ego/tools/economics.py} in Zeile 552 bis 559 festgestellt werden. Damit ist nicht abschlieÃŸend beurteilbar, ob auch andere, beliebige Eingrenzungen anwendbar sind.}\\
 
 
 
@@ -1192,7 +1188,7 @@ Es sind bisher 2 Fehler-Varianten aufgetreten, welche beide in Zusammenhang mit 
 \end{itemize}
 Aus diesem Grund sind Runtime bzw. Speicherbedarf aktuell nicht bestimmbar.\\
 
-Im Folgenden sind beide Fehler detailliert erläutert.
+Im Folgenden sind beide Fehler detailliert erlÃ¤utert.
 \begin{itemize}
 	\item Verbindungs-Fehler 
 	\begin{itemize}
@@ -1213,15 +1209,15 @@ Im Folgenden sind beide Fehler detailliert erläutert.
 		oedialect.engine.ConnectionException: No reason returned
 		
 		\end{lstlisting}
-		\item Zusätzliche Ausgabe des Fehlercodes: error 401
+		\item ZusÃ¤tzliche Ausgabe des Fehlercodes: error 401
 		\item[] bei Zugriff auf oedb (erster Zugriff erfolgt durch etrago)
 		\item siehe Zeilen: 194,259 in skript: venv\_folder\_name/eGo/ego/tools.io.py
 		\item[] bzw. Zeilen 195 - 215 in skript\\ venv\_folder\_name/lib/python3.x/site-packages/oedialect/engine.py
 		\item Antwort der Entwickler auf Fehler-Schilderung: 
 		\begin{itemize}
-			\item[]W.-D. Bunke, am 06.12.2019:\\''[...] Der von Ihnen beschrieben Fehlercode bzw. Statuscodes: 401 ist mir bekannt und hängt mit der Auslastung unseres Servers zusammen. Aktuell verzeichnen wir ein erhebliches Aufkommen und Nutzung unserer Datenbank. Zudem nutzen wir diesen für unsere Sensitivitätsanalysen gerade selbst verstärkt, sodass sie in eine Warteschleife kommen, da der Server aktuell nur für 300 Session pro Zeitpunkt ausgelegt ist.
+			\item[]W.-D. Bunke, am 06.12.2019:\\''[...] Der von Ihnen beschrieben Fehlercode bzw. Statuscodes: 401 ist mir bekannt und hÃ¤ngt mit der Auslastung unseres Servers zusammen. Aktuell verzeichnen wir ein erhebliches Aufkommen und Nutzung unserer Datenbank. Zudem nutzen wir diesen fÃ¼r unsere SensitivitÃ¤tsanalysen gerade selbst verstÃ¤rkt, sodass sie in eine Warteschleife kommen, da der Server aktuell nur fÃ¼r 300 Session pro Zeitpunkt ausgelegt ist.
 			
-			Als aktuelle Lösung kann ich leider nur das wiederholte starten der Berechnung angeben, da die technische Aufrüstung des Serverparks erst für Anfang 2019 vorgesehen ist. Mitte nächster Woche wird zu dem ein Großteil unserer Berechnungen abgeschlossen sein, sodass wiederum mehr Kapazitäten frei werden sollte.''
+			Als aktuelle LÃ¶sung kann ich leider nur das wiederholte starten der Berechnung angeben, da die technische AufrÃ¼stung des Serverparks erst fÃ¼r Anfang 2019 vorgesehen ist. Mitte nÃ¤chster Woche wird zu dem ein GroÃŸteil unserer Berechnungen abgeschlossen sein, sodass wiederum mehr KapazitÃ¤ten frei werden sollte.''
 		\end{itemize}
 	\end{itemize}
 
@@ -1272,7 +1268,7 @@ Im Folgenden sind beide Fehler detailliert erläutert.
 \end{itemize}
 
 \subsection{eTraGo}
-Kann ebenfalls eigenständig ausgeführt werden;
+Kann ebenfalls eigenstÃ¤ndig ausgefÃ¼hrt werden;
 \url{https://github.com/openego/eTraGo/blob/dev/etrago/appl.py}
 eTraGo stands for electric Transmission Grid optimization.
 
@@ -1339,14 +1335,14 @@ the German transmission grid (e.g. SciGRID, GridKit, OpenGridMap, osmTGmod).
 		\item[] Sector-specific electricity demand are associated to these
 		LAs. The LAs are identified by a GIS analysis of high-resolution spatial data which contain
 		information about physical properties, land use, energy, and demography.
-		\item Jährlicher Energiebedarf wird den Einzel-LAs für 4 Sektoren zugewiesen:
+		\item JÃ¤hrlicher Energiebedarf wird den Einzel-LAs fÃ¼r 4 Sektoren zugewiesen:
 		\begin{itemize}
 			\item Haushalte
 			\item Einzelhandel
 			\item Industrie
 			\item Landwirtschaft
 		\end{itemize}
-		\item Anhand v. Standard-Lastprofilen (SLP) können Spitzenlasten ermittelt werden
+		\item Anhand v. Standard-Lastprofilen (SLP) kÃ¶nnen Spitzenlasten ermittelt werden
 		\item Kraftwerke
 		\begin{itemize}
 			\item Standort und $P_N$ f. konventionnelle KW bekannt
@@ -1392,7 +1388,7 @@ the German transmission grid (e.g. SciGRID, GridKit, OpenGridMap, osmTGmod).
 \end{figure}
 
 \subsection{Alloc AEC + gen}
--->>Quelle Hülk
+-->>Quelle HÃ¼lk
 
 \subsection{Tutorials}
 \subsubsection{eGo - Abschluss-Workshop 2018}
@@ -1419,7 +1415,7 @@ Bsp. Notebook (von Projekt-website)
 	\item[] \url{https://www.power.scigrid.de/}
 	\item coastDat
 	\item[] \url{https://www.coastdat.de/data/index.php.en}
-	\item Erklärung zu Eigenschaften von json-Dateien
+	\item ErklÃ¤rung zu Eigenschaften von json-Dateien
 	\item[] \url{https://www.w3schools.com/js/js_json_intro.asp}
 \end{itemize}
 
@@ -1442,7 +1438,7 @@ Bsp. Notebook (von Projekt-website)
 \appendix
 \pagenumbering{Roman}
 %\section{Python script: \\Newton-Raphson Method}\label{app-code}
-%%\inputminted{python}{Gauß+Jac.py}
+%%\inputminted{python}{GauÃŸ+Jac.py}
 %\begin{minted}{Python}
 %	
 %\end{minted}
