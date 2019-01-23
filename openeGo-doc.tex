@@ -92,7 +92,7 @@ a4paper,     %% defines the paper size: a4paper (default), a5paper, letterpaper,
 %%%
 
 %%% scrpage2: KOMA heading and footer
-%%% Note: if you don't use this package, please remove 
+%%% Note: if you don't use this package, please remove
 %%%       \pagestyle{scrheadings} and corresponding settings
 %%%       below too.
 \usepackage[automark]{scrpage2}
@@ -105,7 +105,7 @@ a4paper,     %% defines the paper size: a4paper (default), a5paper, letterpaper,
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
 
-\lstset{ 
+\lstset{
 	backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
 	basicstyle=\footnotesize,        % the size of the fonts that are used for the code
 	breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
@@ -160,7 +160,7 @@ a4paper,     %% defines the paper size: a4paper (default), a5paper, letterpaper,
   %%% graphicx: support for graphics
   \usepackage[pdftex]{graphicx}
   \pdfcompresslevel=9
-  
+
   \usepackage[hyphenbreaks]{breakurl}
   \usepackage[hyphens]{url}
 
@@ -212,7 +212,7 @@ a4paper,     %% defines the paper size: a4paper (default), a5paper, letterpaper,
   pdftitle={}, %%
   pdfauthor={}, %%
   pdfsubject={}, %%
-  pdfcreator={Accomplished with LaTeX2e and pdfLaTeX with hyperref-package.}, %% 
+  pdfcreator={Accomplished with LaTeX2e and pdfLaTeX with hyperref-package.}, %%
   pdfproducer={}, %%
   pdfkeywords={} %%
 }
@@ -229,7 +229,7 @@ a4paper,     %% defines the paper size: a4paper (default), a5paper, letterpaper,
 %% example: \mygraphics{0.7\textwidth}{rolling_grandma}{This is my grandmother on inlinescates}
 %% requires: package graphicx
 %% provides: including centered pictures/graphics with a boldfaced caption below
-%% 
+%%
 \newcommand{\mygraphics}[3]{
   \begin{center}
     \includegraphics[width=#1, keepaspectratio=true]{#2} \\
@@ -284,7 +284,7 @@ a4paper,     %% defines the paper size: a4paper (default), a5paper, letterpaper,
 
 % Definition of \maketitle
 
-%\makeatletter         
+%\makeatletter
 %\def\@maketitle{
 %	%\raggedright
 %	\includegraphics[height = 15mm]{/home/dafu/Schreibtisch/IEE/HA/Abb_IEE/logo_fb4_Bild2.png}%
@@ -292,8 +292,8 @@ a4paper,     %% defines the paper size: a4paper (default), a5paper, letterpaper,
 %	\includegraphics[height = 12mm]{/home/dafu/Schreibtisch/IEE/HA/Abb_IEE/Logo_uni_Bild1.png}\\[8ex]
 %	\begin{center}
 %		{\Huge \bfseries \sffamily \@title }\\[4ex]
-%		
-%		{\Large  \@author}\\[4ex] 
+%
+%		{\Large  \@author}\\[4ex]
 %		\@date\\[8ex]
 %		%\includegraphics[width = 40mm]{image.png}
 %	\end{center}}
@@ -304,7 +304,7 @@ a4paper,     %% defines the paper size: a4paper (default), a5paper, letterpaper,
 %%% set heading and footer
 %%%
 
-%%% scrheadings default: 
+%%% scrheadings default:
 %%%      footer - middle: page number
 \pagestyle{scrheadings}
 
@@ -354,25 +354,25 @@ a4paper,     %% defines the paper size: a4paper (default), a5paper, letterpaper,
 	\vspace{2cm}
 	{\large \today\par}
 	\vspace{2cm}
-	
+
 	{\Large\itshape David Unland \par}
 	{\Large\itshape David Fuhrländer \par}
-	
+
 	\vfill
 	%betreuender Professor:\par
 	in Auftrag gegeben von:\par
-	
+
 	David Beier\\
 	\vfill
 	%\includegraphics[height = 15mm]{Abb/logo_fb4_Bild2.png}%
 	\includegraphics[height = 17mm]{Abb/RES_EN_logo_de_rot_mittel.png}%
 	\hfill
 	\includegraphics[height = 12mm]{Abb/Logo_uni_Bild1.png}
-	
+
 	%\vfill
-	
+
 	% Bottom of the page
-	
+
 \end{titlepage}
 
 \pagenumbering{Roman} %% small roman page numbers
@@ -409,7 +409,7 @@ keine vollständige Lauffähigkeit:
 % \newpage
 % \listoftables
 
-%%% display the main document on a new page 
+%%% display the main document on a new page
 \newpage
 \pagenumbering{arabic} %% normal page numbers (include it, if roman was used above)
 
@@ -429,7 +429,7 @@ keine vollständige Lauffähigkeit:
 
 -Der Status (Neuheits,...) des Tools sowie Veränderungen der Serverstruktur benötigter Datenbanken schränkt die aktuelle Anwendbarkeit ein....
 
-Diese Dokumentation beinhaltet o.g. Inhalte und versucht die folgenden Fragestellungen zu beantworten.  
+Diese Dokumentation beinhaltet o.g. Inhalte und versucht die folgenden Fragestellungen zu beantworten.
 
 \section{Fragestellung} % Bespr. mit D. Beier
 
@@ -439,7 +439,7 @@ Diese Dokumentation beinhaltet o.g. Inhalte und versucht die folgenden Fragestel
 
 
 %\subsubsection{Fragen v. David B.}
-%·         Generell: eGo, eDisGo und eTraGo lauffähig machen; Probleme und Workarounds dokumentieren; 
+%·         Generell: eGo, eDisGo und eTraGo lauffähig machen; Probleme und Workarounds dokumentieren;
 %->>Runtime und Speicherbedarf für verschiedene Untersuchungen testen;
 %
 %·         Für unsere Szenarien relevant:
@@ -455,11 +455,11 @@ Diese Dokumentation beinhaltet o.g. Inhalte und versucht die folgenden Fragestel
 		\item[] $\rightarrow$ nicht ermittelbar
 		\item[] $\rightarrow$ n.e.
 		\item Speicherbedarf
-	\end{enumerate} 
+	\end{enumerate}
 	\item Was kann man mit eGo machen?
 	\begin{enumerate}
 		\item Planung und ökonomische Analyse bestimmter Netz-[Ausbau)Szenarien
-		 
+
 	\end{enumerate}
 	\item Welche Parameter sind änderbar?
 	\begin{enumerate}
@@ -474,22 +474,22 @@ Diese Dokumentation beinhaltet o.g. Inhalte und versucht die folgenden Fragestel
 	\end{enumerate}
 	\item Welche Outputs werden erzeugt
 	\item[] $\rightarrow$ ?
-	
+
 	\item Ist Trassenausbau berücksichtigt?
 	\item[] $\rightarrow$ Netzausbau und entsprechende Kosten sind berücksichtigt; inwiefern Trassenbau einfließt ist aktuell unklar
-	
+
 	\item Ist es möglich, neue Anlage hinzuzufügen und zu berechnen?
-	\item[] $\rightarrow$ nach aktuellem Kenntnisstand nur über Daten-Nachtrag in (eigener) oedb-Liste 
+	\item[] $\rightarrow$ nach aktuellem Kenntnisstand nur über Daten-Nachtrag in (eigener) oedb-Liste
 	\item Wie wird der oedb-Token verwendet?
 	\item[] $\rightarrow$ siehe Abschnitt(\ref{acc-oedb}), Punkte 4-6
-	
+
 %\end{enumerate}
 
 %\begin{itemize}
 %	\item vermutlich nur statisch
 %	\item siehe: (!) oedb->factsheets->scenarios!
 %	\item ggf. neue Tabelle mit zusätzlichen KW erzeugen?
-%	
+%
 %\end{itemize}
 
 %\subsection{offene Fragen}
@@ -501,24 +501,24 @@ Diese Dokumentation beinhaltet o.g. Inhalte und versucht die folgenden Fragestel
 		\item Kann der optimale Kraftwerkspark auf Basis von linearer Optimierung ermittelt werden?
 		\item[]$\rightarrow$ ?
 		\item[] auf Basis der oedb Daten; nach aktuellem Kenntnisstand keine eigene KW-Standort-/Typ-Optimierung
-		
+
 		\item Kann der optimale Dispatch ermittelt werden?
 		\item[] (Ich glaube umgesetzt über nodal pricing, oder?)
 		\item[]$\rightarrow$ via PyPSA
 		\item[] \textit{aktuell kein detaillierteres Wissen}
-		
+
 		\item Wie granular ist die Marktsimulation (werden Anlagen aus den synthetischen MS/NS Netzen für die Deckung der Leistungsbilanz voll herangezogen?)
 		\item[]$\rightarrow$ nach Verständnis der Autoren: ja
 		\item Zeitlich aufgelöster Erzeugungsmix mit Strompreisen und CO2-Intensität ermittelbar?
 		\item[] $\rightarrow$ Erzeugungsmix-Ausgabe ggf. implementierbar
 		\item[] $\rightarrow$ CO2-Intensität vermutlich nicht ermittelbar
 	\end{enumerate}
-	
+
 	\item  Kann eine Netzregion wie Schleswig-Holstein einfach extrahiert werden?
-	\item[] $\rightarrow$ ??? 
+	\item[] $\rightarrow$ ???
 	\item Wie genau ist Heide und Umgebung modelliert? (Auf dem Workshop wurde gesagt, dass urbane Netze von der Betrachtung ausgeklammert wurden)
 	\item[] $\rightarrow$ ???
-	
+
 	\item Wie klappt die Aggregation / Disaggregation für das Gesamtmodell?
 	\item[] $\rightarrow$ ???
 	\item Wie wird der Einsatz von Flexibilitäten im Modell abgebildet? (zB Merit Order?)
@@ -543,9 +543,169 @@ Diese Dokumentation beinhaltet o.g. Inhalte und versucht die folgenden Fragestel
 	\item[] $\rightarrow$ ???
 	\item Strompreise (aus Marktsimulation, siehe Punkt bzgl. Marktsimulation)
 	\item[] $\rightarrow$ ???
-	
-	
+
+
 \end{enumerate}
+
+\section{Installation unter Windows}
+Ob die Installation unter Windows zu empfehlen ist wird sich noch zeigen. Die open\_ego-tools wurden unter Linux entwickelt, bei Windows kommt es häufig schon bei der Installation zu Problemen, die einen gro{\ss}en Zeitaufwand und viele Umwege bergen.\\
+Im aktuellen Stand (16.01.2019) l\"auft bisher nur ding0 fehlerfrei.
+
+\subsection{Programmierumgebungen und -platform}
+\subsubsection{GitHub}
+Die Installation von Github Desktop wird zum gemeinsamen - zeitgleichen und versionierten - Arbeiten an Projekten empfohlen. Damit wird auch die Git Shell (Git Bash) eingerichtet, deren Befehle die Installation der Tools vereinfachen.
+
+\subsubsection{Anaconda}
+Anaconda ist ein empfohlenes Programm zur Verwaltung von Virtual Environments, Programmierumgebungen und (Python-)Packages
+
+\begin{itemize}
+	\item von Anaconda.org die Python3.7-Version herunterladen (Python >= 3.0 (aber <=3.7) benötigt z.B. für ding0)
+	\item Es werden zwei Programme instaliert: Anaconda Prompt und Anaconda Navigator
+\end{itemize}
+
+\paragraph{Anaconda Navigator} ist ein Graphical User Interface (GUI) zur manuellen Einrichtung von Virtual Environments.\\
+		 Auswahl und Installation der Texteditoren erfolgt separat für jedes Environment.\\
+		 --> Jupyter Notebook zur Ausführung von .ipynb-Dateien (häufiges Format in Tutorials)\\
+		 --> Spyder zum Programmieren und Debugging von Python-Skripten
+
+\paragraph{Anaconda Prompt} ist ein Command-Line-Interface (CLI).\\
+Das Ausführen von Programmen, Verwalten der environments, (Ausführen von Python) ist auf die Schnelle möglich
+
+\subsection{Installationsvorbereitung}
+Es wird empfohlen, ein virtuelles Environment für die tools zu erstellen. Die nötigen Python-Packages werden jeweils in der Tool-spezifischen requirement.txt aufgelistet dann mit installiert.
+\\in Anaconda Prompt:
+\begin{lstlisting}[language=bash]
+	conda create -n open_ego
+	conda activate open_ego
+\end{lstlisting}
+
+Zur Ablage und Installation der Tools empfehle ich globalen Ordner, z.B.
+\texttt{ \textbackslash User\textbackslash Anaconda3\textbackslash pkgs}
+
+\subsection{Installation der Tools}
+grundsätzliche Empfehlung bei der Installation der open\_eGo-Tools unter Windows:
+\begin{itemize}
+\item Es tauchten zahlreiche Fehler bei der Installation mit Python3.7 auf.. ich empfehle zur Installation Python3.5.
+\item Einfache Installation per ''pip install <tool>'' nicht empfohlen - es kommen oft Fehlermeldungen aufgrund falscher Package-Bedingungen zurück\\
+-> stattdessen alle tools von GitHub herunterladen und installieren per
+ \begin{lstlisting}[language=bash]
+ pip install -e <path\to\repo>
+ \end{lstlisting}
+
+\item Können vorausgesetzte Packages bei dem Installationsprozess nicht installiert werden, finde die jeweilgen Packages unter den ''Unofficial Windows Binaries for Python Extension Packages'' von Christoph Gohlke:
+\url{https://www.lfd.uci.edu/~gohlke/pythonlibs/}
+\end{itemize}
+
+\subsubsection{OpenEnergyPlatform API}
+\begin{enumerate}
+	\item Download/Clone von Github-Repository: \url{https://github.com/OpenEnergyPlatform/oeplatform}
+	\item in Anaconda Prompt:
+	\begin{lstlisting}[language=bash]
+		conda create -n oep-api
+		activate oep-api
+		cd <path\to\downloaded\repository>
+		pip install -r requirements.txt
+	\end{lstlisting}
+\end{enumerate}
+
+\subsubsection{ego.io}
+Stelle zur Installation der Tools sicher, dass du dich in deinem angelegten Virtual Environment befindest:
+\begin{lstlisting}[language=bash]
+	conda activate open_eGo
+\end{lstlisting}
+bzw. erstelle ein solches Environment, wenn noch nicht vorhanden, per
+\begin{lstlisting}[language=bash]
+	conda create -n open_eGo
+\end{lstlisting}
+\begin{enumerate}
+	\item Download repository von \url{https://github.com/openego/ego.io}
+	\item in Anaconda Prompt:
+\begin{lstlisting}
+	pip install -e <path\to\downloaded\repo>
+\end{lstlisting}
+\end{enumerate}
+
+\subsubsection{ding0}
+Ding0 benötigt ego.io. Stelle sicher, dass die Installation bereits erfolgt ist.\\
+Ding0 scheint häufig Probleme bei der Installation der passenden matplotlib-Version zu haben. Diese treten bei mir vor allem unter Python3.7 auf. Daher nutze ich Python3.5. Nach dem Downgrade ist ein Update von pip nötig.
+\begin{lstlisting}
+	conda install python==3.5
+	python -m pip install --upgrade pip
+\end{lstlisting}
+
+Eine bekannte Hürde ist die fehlerhafte Installation von matplotlib/fiona. Die Fiona-Wheel sollte von Christoph Gohlke heruntergeladen werden: \url{https://www.lfd.uci.edu/~gohlke/pythonlibs/}
+\\-> dabei auf passende Version achten, z.B. Fiona-1.8.3-cp35-cp35m-win\_amd64.whl für Fiona=1.8.3 mit Python=3.5.x bei 64-Bit-Betriebssystem
+\\-> Python Version und build wird angezeigt, wenn python in Command Line Interface aufgerufen wird
+\begin{enumerate}
+	\item Download repository von \url{https://github.com/openego/ding0}
+	\item in Anaconda Prompt:
+\begin{lstlisting}[language=bash]
+pip install <path\to\Fiona-1.8.3-cp35-cp35m-win_amd64.whl>
+pip install -e <path\to\downloaded\ding0-dev>
+\end{lstlisting}
+\end{enumerate}
+
+\paragraph{Zusatz: } bei Fehler \texttt{BUILDING MATPLOTLIB [...] * The following required packages can not be built: * freetype, png}, versuche folgende Schritte:\\
+-> passende wheel-Datei von Christoph Gohlke herunterladen, hier z.b. \texttt{matplotlib-3.0.2-cp37-cp37m-win\_amd64.whl}\\
+\begin{lstlisting}[language=bash]
+	 pip install <path\to\matplotlib-3.0.2-cp37-cp37m-win_amd64.whl>\\
+	 pip install matplotlib\\
+	 pip install freetype-py\\
+	 pip install png_util\\
+	 pip install -e <path\to\downloaded\ding0-dev>\\
+	 ...
+\end{lstlisting}
+
+\subsubsection{eGo}
+\begin{enumerate}
+	\item Microsoft visual C++ >= 14.0 ist benötigt. Intallierte Versionen können in Systemsteuerung->Apps eingesehen werden. Neue Versionen können mit Microsoft Visual Studio (Community) 2017 bezogen werden.
+	\item eGo benötigt PyPSA. Führe in Anaconda Prompt aus:
+	\begin{lstlisting}[language=bash]
+		pip3 install -e git+https://github.com/openego/PyPSA@master#egg=0.11.0fork
+	\end{lstlisting}
+	\item Installation von eGo:
+	\begin{lstlisting}[language=bash]
+		pip3 install eGo --process-dependency-links
+	\end{lstlisting}
+\end{enumerate}
+
+\paragraph{Zusatz: }falls Probleme mit den Packages Pandas/Fiona auftauchen:
+\begin{itemize}
+\item wheel-Datei von Christoph Gohlke herunterladen: \url{https://www.lfd.uci.edu/~gohlke/pythonlibs/}
+\item dabei auf passende Version achten, z.B. Fiona-1.8.3-cp35-cp35m-win\_amd64.whl für Fiona=1.8.3 mit Python=3.5.x bei 64-Bit-Betriebssystem
+\item Python Version und build wird angezeigt, wenn python in Command Line Interface aufgerufen wird
+
+\end{itemize}
+
+\subsubsection{eDisGo}
+fun fact: - eDisGo scheint bei der installation pypsa0.11.0fork zu deinstallieren (und nicht zu reinstallieren).. vor der Installation von eTraGo muss daher PyPSA wieder installiert werden..\\
+
+Installation von eDisGo
+\begin{enumerate}
+	\item download from \url{https://github.com/openego/edisgo}\\
+	\item in Anaconda Prompt:
+	\begin{lstlisting}[language=bash]
+		pip3 install -e <path\to\repo>
+	\end{lstlisting}
+\end{enumerate}
+
+\paragraph{Zusatz:} das alte Spiel... falls Probleme mit Packages contextily/cartopy/rasterio auftreten:
+
+\begin{itemize}
+	\item Python Version = 3.5?
+	\\--> conda install python=3.5
+	\item wheel-Datei von Christoph Gohlke herunterladen: \url{https://www.lfd.uci.edu/~gohlke/pythonlibs/}\\
+	Dabei auf passende Version achten, z.B. Fiona-1.8.3-cp35-cp35m-win\_amd64.whl für Fiona=1.8.3 mit Python=3.5.x bei 64-Bit-Betriebssystem\\
+	Python Version und build wird angezeigt, wenn python in Command Line Interface aufgerufen wird
+\end{itemize}
+
+\subsubsection{eTraGo}
+Nach der Installation von eDisGo muss PyPSA erneut installiert werden. Danach kann eTraGo intsalliert werden. eTraGo von \url{https://github.com/openego/etrago} herunterladen und dann:
+\begin{lstlisting}[language=bash]
+	pip3 install -e git+https://github.com/openego/PyPSA@master#egg=0.11.0fork
+	pip install -e <path\to\eTraGo-dev>
+\end{lstlisting}
+
 
 
 %\section{Anmerkung}
@@ -562,7 +722,7 @@ Diese Dokumentation beinhaltet o.g. Inhalte und versucht die folgenden Fragestel
 %\begin{itemize}
 %	\item VM herunterladen
 %	\item VM installieren
-%	\item installation des gewünschten OS in VM (.iso-Datei) 
+%	\item installation des gewünschten OS in VM (.iso-Datei)
 %\end{itemize}
 %\subsection{OpeneGo Installieren (ubuntu)}
 %siehe: \url{https://media.readthedocs.org/pdf/openego/latest/openego.pdf}
@@ -634,7 +794,7 @@ Diese Dokumentation beinhaltet o.g. Inhalte und versucht die folgenden Fragestel
 %	\end{lstlisting}
 %	\item Anmelden/ Einloggen in Datenbank
 %	\\ \url{https://openego.readthedocs.io/en/dev/installation.html#setup-database-connection}
-%	
+%
 %	\item Dingo herunterladen und installieren
 %	\begin{lstlisting}
 %	$ git clone https://github.com/openego/ding0.git
@@ -644,11 +804,11 @@ Diese Dokumentation beinhaltet o.g. Inhalte und versucht die folgenden Fragestel
 %	\begin{lstlisting}
 %	$ python3 ding0/ding0/examples/example_parallel_multiple_grid_districts.py
 %	\end{lstlisting}
-%	
-%	
+%
+%
 %\end{enumerate}
-%	
-%	
+%
+%
 %\subsection{Windows}
 %\subsection{database connection}
 %
@@ -666,7 +826,7 @@ Diese Dokumentation beinhaltet o.g. Inhalte und versucht die folgenden Fragestel
 \newpage
 \section{Workaround zum Einrichten der eGo-Tools}
 Zum Einrichten und nutzen der eGo-Tools bestehen grundsätzlich verschiedene Alternativen. Bisher konnte jedoch von den Autoren lediglich die im Folgenden beschriebene Variante erfolgreich durchgeführt werden.\\
-Das Ausführen der Tools wird konkret mittels einer VM (virtual machine) durchgeführt. Dies bietet die Möglichkeit einer betriebssystemunabhängigen Installation und verhindert die ungewünschte Veränderung bestehender python-packages.\\   
+Das Ausführen der Tools wird konkret mittels einer VM (virtual machine) durchgeführt. Dies bietet die Möglichkeit einer betriebssystemunabhängigen Installation und verhindert die ungewünschte Veränderung bestehender python-packages.\\
 Im Folgenden wird das Einrichten von \textsc{virtualbox}, die Installation von \textsc{ubuntu 18.04} sowie die Installation von eGo- und Ding0-Tools erläutert.
 
 \subsection{Nützliche Websites}
@@ -686,7 +846,7 @@ Im Folgenden wird das Einrichten von \textsc{virtualbox}, die Installation von \
 	\item Lastflussrechnungen basieren auf PyPSA:
 	\item[] \url{https://pypsa.org/doc}
 \end{itemize}
-	
+
 
 \subsection{Einrichten einer VM}
 \begin{enumerate}
@@ -700,17 +860,17 @@ Im Folgenden wird das Einrichten von \textsc{virtualbox}, die Installation von \
 %	./downloadfile
 %	\end{lstlisting}
 	\item[] \url{https://www.wikihow.com/Install-VirtualBox}
-	
+
 	\item[] befolge Anweisungen auf:
-	\item[] \url{https://tecadmin.net/install-oracle-virtualbox-on-ubuntu/} 
-	
+	\item[] \url{https://tecadmin.net/install-oracle-virtualbox-on-ubuntu/}
+
 	%\item Aufruf der VM im Terminal ($strg + alt + t$):
 	%\item[] \begin{lstlisting}[language=bash]
 	% virtualbox
 	%\end{lstlisting}
 	\item Erstellen einer neuen VM
 	\item[] \textit{benötigte Festplattengröße beachten:} siehe \ref{conda-pack}
-	\item[] \url{https://docs.oracle.com/cd/E26217_01/E26796/html/qs-create-vm.html} 
+	\item[] \url{https://docs.oracle.com/cd/E26217_01/E26796/html/qs-create-vm.html}
 \end{enumerate}
 
 \subsection{Nutzen des (Linux-)Terminal}
@@ -720,14 +880,14 @@ Unten aufgelistete Befehle sind zum Verwenden des Linux-Terminals hilfreich.\\
 Grundsätzlich sind sämtliche Terminal-Befehle (sofern nicht anders gekennzeichnet) für jede Zeile separat auszuführen.\\ Zu Beginn jeder Befehlszeile erscheinen Nutzer-Name und aktueller Pfad (prinzipielle Darstellung):
 \begin{lstlisting}
 user:~/aktueller_DateiPfad$
-\end{lstlisting} 
+\end{lstlisting}
 Im Folgenden wird stattdessen lediglich ein $\$$-Zeichen zur Markierung jeweils einer Befehlszeile verwendet.\\
 Mit $\#$ sind Kommentare (kein aktiver code) hinzugefügt. Erscheinen am linken Rand der Eingabezeile diese Symbole: $<<<$, ist die python-shell aktiv.
 \begin{lstlisting}[language=bash]
 $ cd 	# change directory to....
 $ ls 	# list items in current directory
 ## using virtual environment (venv)
-$ source bin/activate 		# executable only in venv-directory; activate venv 
+$ source bin/activate 		# executable only in venv-directory; activate venv
 $ deactivate 				# deactivate venv
 $ python3 anyscriptname.py 	#run script with python3 (without GUI)
 
@@ -757,14 +917,14 @@ $ python3 anyscriptname.py 	#run script with python3 (without GUI)
 	\item[] \textit{sofern die VM ausschließlich für diese eGo-Anwendugn verwendet wird, kann ggf. auf die Nutzung einer (zusätzlichen) virtuellen Umgebung verzichtet werden. Diese Maßnahme dient (nach Kenntnisstand der Autoren) lediglich zur Vermeidung von Versions-Überschreibungen einzelner python-packages. }
 	\begin{enumerate}
 		\item Ordner einer virtuellen Umgebung
-		
+
 		\item[]
 		\begin{lstlisting}[language=bash]
 		$ virtualenv ego_venv --clear -p python3
 		\end{lstlisting}
 		\vspace{-0.8cm}
 		\item[] $\rightarrow$ neuer Ordner \glqq ego\_venv \grqq
-		
+
 		\item neuer Ordner
 		\item[]
 		\begin{lstlisting}[language=bash]
@@ -773,9 +933,9 @@ $ python3 anyscriptname.py 	#run script with python3 (without GUI)
 		\end{lstlisting}
 		\vspace{-0.8cm}
 		\item[] $\rightarrow$ neuer Ordner \glqq ordner\_name \grqq
-	\end{enumerate} 
-	
-	
+	\end{enumerate}
+
+
 	\item In angelegten (virtuellen) Ordner manövrieren \begin{lstlisting}[language=bash]
 	$ cd .../.../ego_venv
 	\end{lstlisting}
@@ -783,26 +943,26 @@ $ python3 anyscriptname.py 	#run script with python3 (without GUI)
 	\item[] \begin{lstlisting}[language=bash]
 	$ git clone https://github.com/openego/eGo
 	\end{lstlisting}
-	
+
 	\item virtuelle Umgebung (virtual environment) aktivieren:
-	
+
 	\item[] \begin{lstlisting}[language=bash]
 	$ source bin activate
 	 die Darstellung der Eingabezeile aendert sich in Folgendes:
-	(ego_venv)user:~/aktueller_Pfad$ 
+	(ego_venv)user:~/aktueller_Pfad$
 	\end{lstlisting}
-	
+
 	\item eGo installieren:
 	\item[] \begin{lstlisting}[language=bash]
 	$ pip3 install eGo --process-dependency-links
 	\end{lstlisting}
 	\item[] falls Fehler während Install.:
 	\item[] \begin{lstlisting}[language=bash]
-	$ pip3 install -e 
+	$ pip3 install -e
 	$ git+https://github.com/openego//PyPSA@master#egg=0.11.0fork
 	$ pip3 install eGo --process-dependency-links
 	\end{lstlisting}
-	
+
 	\item Aufruf/ Ausführen von Skripten mittels eGo-tool erfolgt indirekt; Aufruf von python-Skripten (funktioniert an diesem Punkt noch nicht vollständig)
 	\item[] \begin{lstlisting}[language=bash]
 	$ cd eGo/ego
@@ -810,7 +970,7 @@ $ python3 anyscriptname.py 	#run script with python3 (without GUI)
 	$ python3 appl.py
 	\end{lstlisting}
 	\item Eingabe der Daten von \url{openenergy-platform.org} erforderlich (siehe \ref{acc-oedb})
-	\item[] es wird in (verstecktem) Ordner \glqq .egoio  \grqq eine \glqq condig.ini  \grqq -Datei angelegt; diese enthält: 
+	\item[] es wird in (verstecktem) Ordner \glqq .egoio  \grqq eine \glqq condig.ini  \grqq -Datei angelegt; diese enthält:
 	\item[] \begin{lstlisting}[language=bash]
 	[oedb]
 	dialect  = oedialect
@@ -820,9 +980,9 @@ $ python3 anyscriptname.py 	#run script with python3 (without GUI)
 	port     = 80
 	password = <token>
 	\end{lstlisting}
-	
-	
-	
+
+
+
 \end{enumerate}
 
 \subsubsection{Account der Openenergy-Platform}
@@ -849,12 +1009,12 @@ $ python3 anyscriptname.py 	#run script with python3 (without GUI)
 	\item[] \begin{lstlisting}[language=bash]
 	$ source bin/activate
 	\end{lstlisting}
-	
+
 	\item Installation von \textsc{ding0}
 	\item[] \begin{lstlisting}[language=bash]
 	$ pip3 install -e ding0
 	\end{lstlisting}
-	
+
 	\item Laufversuche
 	\begin{enumerate}
 		\item example\_multiple\_grid\_districts.py
@@ -885,17 +1045,17 @@ $ python3 anyscriptname.py 	#run script with python3 (without GUI)
 
 %\subsection{Fehlerbehebung}
 %\begin{itemize}
-%	\item 
+%	\item
 %\end{itemize}
 %\begin{tabular}{ll}
 %	\textbf{Fehler} & \textbf{Fehlerbehebung} \textbf{Terminal-Eingabe}\\
 %	\textbf{Terminalmeldung} & \textbf{Fehlerbehebung} \textbf{Terminal-Eingabe}\\
-%	\hline \hline 
+%	\hline \hline
 %	%& virtualenv installieren & \begin{lstlisting}[language=Python] $ sudo apt install virtualenv \end{lstlisting}\\
 %
 %	%&&\\
 %\end{tabular}
-	
+
 \subsection{\textsc{Python} - Interpreter}
 Falls entsprechende Skripte nicht im Terminal aufgerufen/ ausgeführt werden sollen, können entsprechende Interpreter installiert werden.\\
 Die Installation kann einzeln oder über den (überaus praktischen) package-manager \textsc{Anaconda} (siehe folgender Abschnitt) erfolgen.\\
@@ -905,7 +1065,7 @@ Verwendbare Interpreter sind (u.A.):
 	\item[] \url{https://jupyter.org/}
 	\item spyder (IDE, ähnlich \textsc{Matlab})
 	\item[] \url{https://docs.spyder-ide.org/}
-	
+
 \end{itemize}
 
 
@@ -931,7 +1091,7 @@ Das \textsc{eGo}-Tool verknüpft die Netzoptimierungstools \textsc{eDisGo} (Opti
 Datengrundlage ist standardmäßig die \textsc{Openenergy-Database} (oedb, \url{openernergy-platform.org}).\\
 \textsc{Ding0} greift auf Standortdaten von Mittelspannungs-Übergabestationen (HV zu MV) der \textsc{oedb} zu und generiert ein Netzmodell für Mittel- und Niederspannung (MV und LV), welches als Berechnungsgrundlage für weitere Optimierungen dient.\\
 Lastflussberechnungen werden durch das \textsc{PYTHON}-Tool \textsc{PyPsa} durchgeführt, wofür ein sog. ''container'' übergeben werden muss, welcher entsprechende Daten ???enthält.\\
- 
+
 
 \subsection{PyPSA}
 Dokumentation, Download, etc. auf
@@ -940,7 +1100,7 @@ Dokumentation, Download, etc. auf
 Forum zu PyPSA unter:
 \url{https://groups.google.com/forum/#!forum/pypsa}
 
-	
+
 
 \subsection{eGo}
 Das Resultat des \textsc{open\_ego}-Projektes ist eine opensource-Netzplanungs-Toolbox: \textsc{ego}\\
@@ -956,7 +1116,7 @@ Für die Strukturierung des Mittel- bzw. Niederspannungsnetzes wird die betracht
 - TSOs sind nicht dazu berechtigt/verpflichtet Daten üer MS/NS-Netze zu veröffentlichen
 - Last und Erzeugung werden für diese Bereiche statistisch generiert
 - Voronoi Algorithmus auf Basis der Übergabestationen (substations) und Daten von Verwaltungsgrenzen
-%Huelk: The research project open\_eGo [...] %is a response to these challenges [8]. It 
+%Huelk: The research project open\_eGo [...] %is a response to these challenges [8]. It
 %is developing an open-source grid
 %planning toolbox named eGo.\\
 %This toolbox works from
@@ -1010,11 +1170,11 @@ Durch den Aufruf des appl.py-Skripts erfolgt (u.a.) das Anlegen einer neuen ego-
 	``scenario\_setting.json`` file  your definded eTraGo and
 	eDisGo results container. And contains the session for the
 	database connection.''
-	
+
 	\begin{itemize}
 		\item[] \textbf{eTraGOResults(eGoBasic)}
 		\item[] ''The ``eTraGoResults`` class creates and contains all results of eTraGo  and it's network container for eGo.''
-		
+
 		\begin{itemize}
 			\item[] \textbf{eDisGOResults(eTraGOResults)}
 			\item[] '...create and contains all results of eDisGo and its network containers.''
@@ -1028,7 +1188,7 @@ Durch den Aufruf des appl.py-Skripts erfolgt (u.a.) das Anlegen einer neuen ego-
 \end{itemize}
 
 Eine eGo()-Instanz ''erbt'' Methoden und Attribute von sämtlichen aufgelisteten, übergeordneten Klassen.
- 
+
 
 \subsubsection{Parametrierung-Optionen}
 \label{param-opt}
@@ -1036,7 +1196,7 @@ Eine eGo()-Instanz ''erbt'' Methoden und Attribute von sämtlichen aufgelisteten
 
 Die Parametrierung der Berechnungen erfolgt über die Datei ''scenario\_settings.json''
 Zur besseren Übersicht erfolgt die Darstellung dieser Datei aufgeteilt in \textbf{''global parameters''},\textbf{''eTRaGo-settings''} und \textbf{''eDisGo-settings''}.
- 
+
 \begin{lstlisting}
 {
 # global parameters
@@ -1154,14 +1314,14 @@ Bislang sind, wie im vorangestellten  Abschnitt(\ref{param-opt}) beinhaltet, 3 S
 	\item NEP 2035
 	\begin{itemize}
 		\item[] Verweis auf NEP2025 Daten:
-		\\\url{https://www.netzentwicklungsplan.de/sites/default/files/paragraphs-files/kostenschaetzungen_nep_2025_1_entwurf.pdf} 
+		\\\url{https://www.netzentwicklungsplan.de/sites/default/files/paragraphs-files/kostenschaetzungen_nep_2025_1_entwurf.pdf}
 	\end{itemize}
 	\item ego100
 	\begin{itemize}
 		\item projekt-eigenes Szenario: 100\% EE
 	\end{itemize}
 \end{itemize}
-Der betrachtete Szenario-Rahmen kann durch das Praefix ''SH'' auf Schleswig-Holstein  eingeschränkt werden. 
+Der betrachtete Szenario-Rahmen kann durch das Praefix ''SH'' auf Schleswig-Holstein  eingeschränkt werden.
 
 \textbf{Anmerkung:} \textit{Aktuell konnte die einzige Scenario-Abfrage (scn\_name) in Skript\\ \url{eGo/ego/tools/economics.py} in Zeile 552 bis 559 festgestellt werden. Damit ist nicht abschließend beurteilbar, ob auch andere, beliebige Eingrenzungen anwendbar sind.}\\
 
@@ -1190,7 +1350,7 @@ Aus diesem Grund sind Runtime bzw. Speicherbedarf aktuell nicht bestimmbar.\\
 
 Im Folgenden sind beide Fehler detailliert erläutert.
 \begin{itemize}
-	\item Verbindungs-Fehler 
+	\item Verbindungs-Fehler
 	\begin{itemize}
 		\begin{lstlisting}
 		Traceback (most recent call last):
@@ -1199,7 +1359,7 @@ Im Folgenden sind beide Fehler detailliert erläutert.
 		File "/home/dafu-vm/ego_venv/lib/python3.6/site-packages/sqlalchemy/util/queue.py", line 145, in get
 		raise Empty
 		sqlalchemy.util.queue.Empty
-		
+
 		During handling of the above exception, another exception occurred:
 		Traceback (most recent call last):
 		...
@@ -1207,23 +1367,23 @@ Im Folgenden sind beide Fehler detailliert erläutert.
 		File "/home/dafu-vm/ego_venv/lib/python3.6/site-packages/oedialect/engine.py", line 213, in post
 		raise ConnectionException(json_response['reason'] if 'reason' in json_response else 'No reason returned')
 		oedialect.engine.ConnectionException: No reason returned
-		
+
 		\end{lstlisting}
 		\item Zusätzliche Ausgabe des Fehlercodes: error 401
 		\item[] bei Zugriff auf oedb (erster Zugriff erfolgt durch etrago)
 		\item siehe Zeilen: 194,259 in skript: venv\_folder\_name/eGo/ego/tools.io.py
 		\item[] bzw. Zeilen 195 - 215 in skript\\ venv\_folder\_name/lib/python3.x/site-packages/oedialect/engine.py
-		\item Antwort der Entwickler auf Fehler-Schilderung: 
+		\item Antwort der Entwickler auf Fehler-Schilderung:
 		\begin{itemize}
 			\item[]W.-D. Bunke, am 06.12.2019:\\''[...] Der von Ihnen beschrieben Fehlercode bzw. Statuscodes: 401 ist mir bekannt und hängt mit der Auslastung unseres Servers zusammen. Aktuell verzeichnen wir ein erhebliches Aufkommen und Nutzung unserer Datenbank. Zudem nutzen wir diesen für unsere Sensitivitätsanalysen gerade selbst verstärkt, sodass sie in eine Warteschleife kommen, da der Server aktuell nur für 300 Session pro Zeitpunkt ausgelegt ist.
-			
+
 			Als aktuelle Lösung kann ich leider nur das wiederholte starten der Berechnung angeben, da die technische Aufrüstung des Serverparks erst für Anfang 2019 vorgesehen ist. Mitte nächster Woche wird zu dem ein Großteil unserer Berechnungen abgeschlossen sein, sodass wiederum mehr Kapazitäten frei werden sollte.''
 		\end{itemize}
 	\end{itemize}
 
 	\item SSL-Fehler (2019-01-14)
 	\begin{itemize}
-		\item terminal-Ausgabe: 
+		\item terminal-Ausgabe:
 		\item[] \begin{lstlisting}[language=bash]
 		Traceback (most recent call last):
 		File "/home/dafu-vm/ego_venv/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1122, in _do_get
@@ -1231,18 +1391,18 @@ Im Folgenden sind beide Fehler detailliert erläutert.
 		File "/home/dafu-vm/ego_venv/lib/python3.6/site-packages/sqlalchemy/util/queue.py", line 145, in get
 		raise Empty
 		sqlalchemy.util.queue.Empty
-		
+
 		During handling of the above exception, another exception occurred:
-		
+
 		Traceback (most recent call last):
 		...
 		...
 		  File "/usr/lib/python3.6/ssl.py", line 689, in do_handshake
 		self._sslobj.do_handshake()
 		ssl.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:847)
-		
+
 		During handling of the above exception, another exception occurred:
-		
+
 		Traceback (most recent call last):
 		File "/home/dafu-vm/ego_venv/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
 		timeout=timeout
@@ -1251,17 +1411,17 @@ Im Folgenden sind beide Fehler detailliert erläutert.
 		File "/home/dafu-vm/ego_venv/lib/python3.6/site-packages/urllib3/util/retry.py", line 398, in increment
 		raise MaxRetryError(_pool, url, error or ResponseError(cause))
 		urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='openenergy-platform.org', port=443): Max retries exceeded with url: /api/v0/advanced/connection/open (Caused by SSLError(SSLError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:847)'),))
-		
+
 		During handling of the above exception, another exception occurred:
 		...
 		...
 		File "/home/dafu-vm/ego_venv/lib/python3.6/site-packages/requests/adapters.py", line 514, in send
 		raise SSLError(e, request=request)
 		requests.exceptions.SSLError: HTTPSConnectionPool(host='openenergy-platform.org', port=443): Max retries exceeded with url: /api/v0/advanced/connection/open (Caused by SSLError(SSLError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:847)'),))
-		
-		
+
+
 		\end{lstlisting}
-		
+
 		\item Ein Direktaufruf von \url{https://openenergy-platform.org/} liefert:\\ \textsc{SEC\_ERROR\_UNKNOWN\_ISSUER}\\
 		\item siehe auch. \url{https://support.mozilla.org/de/kb/verbindung-ist-nicht-sicher-fehlermeldung}
 	\end{itemize}
@@ -1322,7 +1482,7 @@ the German transmission grid (e.g. SciGRID, GridKit, OpenGridMap, osmTGmod).
 		\item HV: 110, 60kV [Mueller]
 		\item MV: ???
 	\end{itemize}
-	
+
 \end{itemize}
 
 \begin{itemize}
@@ -1381,7 +1541,7 @@ the German transmission grid (e.g. SciGRID, GridKit, OpenGridMap, osmTGmod).
 \end{figure}
 
 \begin{figure}[H]
-	\label{EE-alloc}	
+	\label{EE-alloc}
 	\caption{Tabelle zu EE-Allokation}
 	\includegraphics[width=0.45\textwidth]{Abb/sc_EE-alloc.png}
 
@@ -1420,14 +1580,14 @@ Bsp. Notebook (von Projekt-website)
 \end{itemize}
 
 %\begin{thebibliography}{999}
-%	
+%
 %	\bibitem{lamport94}
 %	Leslie Lamport,
 %	\emph{\LaTeX: A Document Preparation System}.
 %	Addison Wesley, Massachusetts,
 %	2nd Edition,
 %	1994.
-%	
+%
 %\end{thebibliography}
 \bibliographystyle{acm}
 \bibliography{/home/dafu/Schreibtisch/IEE/HA/IEE_ref.bib}
@@ -1440,7 +1600,7 @@ Bsp. Notebook (von Projekt-website)
 %\section{Python script: \\Newton-Raphson Method}\label{app-code}
 %%\inputminted{python}{Gauß+Jac.py}
 %\begin{minted}{Python}
-%	
+%
 %\end{minted}
 
 
